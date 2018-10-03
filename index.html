@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            :root {
+                --initial-size: 200px;
+                --medium: calc(var(--initial-size) / 1.6);
+                --small: calc(var(--initial-size) / 3.5);
+            }
+            .triangle-down {
+                position: absolute;
+                text-align: center;
+                top: 0;
+                border-left: var(--size) solid transparent; 
+                border-right: var(--size) solid transparent; 
+                border-top: calc(var(--size)*2) solid var(--color); 
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        
+    </body style="display: inline-block; text-align: center">
+        <div style="position: relative">
+            <div class="triangle-down" style="--size: var(--initial-size); --color: #68C3A3" ></div>
+            <div class="triangle-down" style="--size: var(--medium); --color: rgb(8, 11, 189); margin-left: calc(var(--medium)/1.6)" ></div>
+            <div class="triangle-down" style="--size: var(--small); --color: white; margin-left: calc(var(--medium)/0.85) " ></div>
+        </div>
+    </body>
+</html>
